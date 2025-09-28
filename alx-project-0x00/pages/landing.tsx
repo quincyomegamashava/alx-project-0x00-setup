@@ -1,4 +1,5 @@
 import Card from "@/components/Card";
+import Button from "@/components/Button";
 
 const Landing: React.FC =  () => {
   return (
@@ -9,6 +10,22 @@ const Landing: React.FC =  () => {
         <Card />
         <Card />
       </div>
+
+      <section className="space-y-3">
+        <h2 className="text-lg font-semibold">Buttons</h2>
+        <div className="flex flex-wrap gap-3 items-center">
+          {/* Sizes */}
+          <Button title="Small" styles="text-sm px-3 py-1 rounded-sm" />
+          <Button title="Medium" styles="text-base px-4 py-2 rounded-sm" />
+          <Button title="Large" styles="text-lg px-6 py-3 rounded-sm" />
+        </div>
+        <div className="flex flex-wrap gap-3 items-center">
+          {/* Shapes */}
+          <Button title="rounded-sm" styles="text-base px-4 py-2 rounded-sm" />
+          <Button title="rounded-md" styles="text-base px-4 py-2 rounded-md" />
+          <Button title="rounded-full" styles="text-base px-4 py-2 rounded-full" />
+        </div>
+      </section>
     </div>
   )
 }
